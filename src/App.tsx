@@ -12,7 +12,7 @@ function App() {
       setUser(user);
       setUserToken((await user?.getIdToken()) || "");
     });
-  }, []);
+  }, [setUser, setUserToken]);
 
   return <div className='App'>{userToken ? <Home /> : <Login />}</div>;
 }

@@ -4,7 +4,7 @@ import {
   PostStdHubQuestion,
   PostStdHubQuestionComment,
 } from "../types/stdhub";
-import {buildSOFConverter, SOFConverter} from "./converter";
+import {SOFConverter} from "./converter";
 
 const post = async (url: string, userToken: string, data: any) => {
   const result = await axios

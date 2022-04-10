@@ -35,8 +35,6 @@ const buildPostStdHubAnswer = (
 };
 
 export const buildSOFConverter = (SOF: SOF) => {
-  // if (SOF === null) return SOF;
-
   const questionComments = SOF.question.comments;
   const answers = SOF.answers;
 
