@@ -2,9 +2,7 @@ import {FormikConfig, FormikValues} from "formik";
 import "reflect-metadata";
 import {AnySchema} from "yup";
 
-export function Form<T extends {new (...args: any[]): {}}>(constructor: T) {
-  const config = Reflect.getMetadata("config", constructor.prototype);
-}
+export function Form<T extends {new (...args: any[]): {}}>(constructor: T) {}
 
 type FieldConfigExtra = {
   label?: string;

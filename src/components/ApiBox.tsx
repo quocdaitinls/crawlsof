@@ -1,6 +1,6 @@
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import {Box, Button, IconButton, Typography} from "@mui/material";
+import {Box, IconButton, Typography} from "@mui/material";
 import {Formik, FormikValues} from "formik";
 import {useState} from "react";
 import ReactJson from "react-json-view";
