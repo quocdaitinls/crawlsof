@@ -10,7 +10,7 @@ const post = async (url: string, userToken: string, data: any) => {
   const result = await axios
     .post(url, data, {
       headers: {
-        Authorization: `Bearer${userToken}`,
+        Authorization: `Bearer ${userToken}`,
         ContentType: "application/json",
       },
       timeout: 30000,
