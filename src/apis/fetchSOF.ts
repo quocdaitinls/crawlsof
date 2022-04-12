@@ -1,7 +1,7 @@
 import axios from "axios";
 import {CrawlByTagForm} from "../apiForm/CrawlByTagForm";
 import {CrawlByUrlForm} from "../apiForm/CrawlByUrlForm";
-import {CrawlByIdsForm} from "../apiForm/CrawlByIdsForm";
+import {CrawlByIdForm} from "../apiForm/CrawlByIdForm";
 import {SOF} from "../types/sof";
 
 export type Fetcher<V, R> = (form: V) => Promise<R>;
@@ -31,7 +31,6 @@ export const fetchSOFByTagBuilder = createFetchSOFBuilder<
   SOF[]
 >("https://crawlstackoverflow.herokuapp.com/api/question/bytag");
 
-export const fetchSOFByIdsBuilder = createFetchSOFBuilder<
-  CrawlByIdsForm,
-  SOF[]
->("https://crawlstackoverflow.herokuapp.com/api/question/byids");
+export const fetchSOFByIdBuilder = createFetchSOFBuilder<CrawlByIdForm, SOF[]>(
+  "https://crawlstackoverflow.herokuapp.com/api/question/byid"
+);

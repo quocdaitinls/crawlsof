@@ -1,6 +1,7 @@
 import {Box, TextField} from "@mui/material";
 import styled from "styled-components";
 import {useAppCtx} from "../context/AppContext";
+import {CrawlById} from "./CrawlByIds";
 import {CrawlByTag} from "./CrawlByTag";
 import {CrawlByUrl} from "./CrawlByUrl";
 import MyAppBar from "./MyAppBar";
@@ -40,6 +41,7 @@ export const Home = () => {
       </Box>
       <Box component='div' className='api-box'>
         <CrawlByUrl />
+        <CrawlById />
         <CrawlByTag />
       </Box>
     </StyledHome>

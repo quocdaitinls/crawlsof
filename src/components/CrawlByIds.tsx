@@ -1,13 +1,13 @@
-import {CrawlByIdsForm} from "../apiForm/CrawlByIdsForm";
-import {fetchSOFByIdsBuilder} from "../apis/fetchSOF";
+import {CrawlByIdForm} from "../apiForm/CrawlByIdForm";
+import {fetchSOFByIdBuilder} from "../apis/fetchSOF";
 import {ApiBox} from "./ApiBox";
 
-export const CrawlByIds = () => {
+export const CrawlById = () => {
   return (
     <ApiBox
-      title='Crawl by ids'
-      form={CrawlByIdsForm}
-      fetcherBuilder={fetchSOFByIdsBuilder}
+      title='Crawl by id'
+      form={CrawlByIdForm}
+      fetcherBuilder={fetchSOFByIdBuilder}
     />
   );
 };

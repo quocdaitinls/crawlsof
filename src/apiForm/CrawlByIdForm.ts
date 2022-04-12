@@ -2,12 +2,12 @@ import {Field, Form} from "../services/form";
 import * as Yup from "yup";
 
 @Form
-export class CrawlByIdsForm {
+export class CrawlByIdForm {
   @Field({
     value: "",
-    validation: Yup.string().required("Ids is required"),
+    validation: Yup.string().required("Id is required"),
     required: true,
-    label: "List ids",
+    label: "Question id",
   })
-  ids: string;
+  id: string;
 }
